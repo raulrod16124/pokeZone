@@ -1,0 +1,41 @@
+
+<div class="sectionBattle">
+
+    <nav class="content-nav">
+
+        <a routerLink="/">Back Hold</a>
+
+        <h1 class="title1">Pokemon Battle</h1>
+
+
+    </nav>
+
+    <h2 class="title2">Choose your Pokemon for the Battle</h2>
+
+    <div class="content-menu">
+
+        <h2 class="title3">Fight against random pokemons. If you beat 5 rivals you win. But if you lose against 5 you lose, good luck! </h2>
+
+        <div class="selectPk">
+    
+            <li class="pokemon"  *ngFor="let pokemon of pokemonsFilter" routerLink="/battle/{{pokemon.id}}">
+    
+                <img src="{{pokemon.imgPk}}" alt="pkImg">
+                <p>{{pokemon.name}}</p>
+    
+            </li>
+    
+        </div>
+
+    </div>
+
+    
+
+    <footer class="footer">
+
+        <p>Pokemon &copy; 2021</p>
+
+    </footer>
+
+
+</div>

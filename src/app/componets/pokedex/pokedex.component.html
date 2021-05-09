@@ -1,0 +1,53 @@
+<div class="sectionPokedex">
+
+    <nav class="content-nav">
+
+        <a routerLink="/">Back Hold</a>
+        
+        <h1 class="title2">Pokedex</h1>
+
+    </nav>
+
+
+    <div class="content-pokemons">
+
+        <div class="stage picture">
+
+            <img src="{{pokemons[pkId].imgPk}}" alt="" routerLink="/pokedex/{{pokemons[pkId].id}}">
+
+            <div class="someData">
+                <p>Nº: {{pokemons[pkId].order}}</p>
+                <p>{{pokemons[pkId].type}}</p>
+                <p>{{pokemons[pkId].xp}} XP</p>
+            </div>
+
+        </div>
+
+        <div class="stage list">
+
+            <div class="pkInlist" *ngFor="let pokemon of pokemonsFilter" (click)="selectPk( pokemon.id )" >
+
+                <div class="part1">
+                    
+                    <img src="{{pokemon.imgPk}}" alt="pokemon">
+                    <p>Nº {{pokemon.order}}</p>
+                    
+                </div>
+                <p>{{pokemon.name}}</p>
+                <!-- <p><i class="fab fa-hornbill"></i></p> -->
+                <img class="pokeball" src="../../../assets/img/pokebola.png" alt="pokeball">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <p>Pokemon &copy; 2021</p>
+
+    </footer>
+
+
+</div>

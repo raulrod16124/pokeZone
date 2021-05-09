@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: 'Original Surfer', cursive;
+    background: linear-gradient(to top, #003b46, #07575b);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}

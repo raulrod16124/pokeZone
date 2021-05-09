@@ -1,0 +1,114 @@
+
+<div class="sectionBattle">
+
+    <nav class="content-nav">
+
+        <a routerLink="/battle">Back</a>
+
+        <h1 class="title1">Pokemon Battle</h1>
+
+    </nav>
+
+    <h2 class="title2">battleground</h2>
+
+    <div class="battle-stage">
+
+        <div class="stage">
+    
+            <div class="pokemonSelection">
+
+                <img src="{{pokemon.pkimg}}" alt="">
+
+                <div class="data">
+
+                    <div class="content-data">
+                        <span>{{pokemon.experience}}</span>
+                        <label>XP Points</label>
+                    </div>
+
+                    <div class="content-data">
+                        <span>{{pokemon.name}}</span>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="content-data">
+                        <span>{{pokemon.moveOne}}</span>
+                        <label>Move</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="score">
+
+                <h2 class="screen">SCORE</h2>
+
+                
+                <div class="content-scoreData">
+                    
+                    <span class="resultFight">{{myPoints}} : {{oppPoints}}</span>
+                    
+                    <button class="ownBtn btn btn-success" type="button" (click)="randomOpponent();showPkm()">Fight</button>
+                    
+                </div>
+
+                <div class="content-endGame">
+
+                    <span class="messageEndGame">{{message}} <p>with {{pokemon.name}}</p></span>
+
+                    <button class="ownBtn btn btn-warning" type="button" (click)="resetBattle()">Restart</button>
+
+                </div>
+                
+
+            </div>
+
+            <div class="whichPkm">
+
+                <h2>?</h2>
+                <h2>Opponent</h2>
+
+            </div>
+
+            <div class="pokemonOpponent">
+
+                <img src="{{pokemonOpponent.pkimg}}" alt="">
+
+                <div class="data">
+
+                    <div class="content-data">
+                        <span>{{pokemonOpponent.experience}}</span>
+                        <label>XP Points</label>
+                    </div>
+
+                    <div class="content-data">
+                        <span>{{pokemonOpponent.name}}</span>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="content-data">
+                        <span>{{pokemonOpponent.moveOne}}</span>
+                        <label>Move</label>
+                    </div>
+
+                </div>
+
+
+            </div>
+    
+        </div>
+
+    </div>
+
+    
+
+    <footer class="footer">
+
+        <p>Pokemon &copy; 2021</p>
+
+    </footer>
+
+
+</div>

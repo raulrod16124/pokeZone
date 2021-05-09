@@ -1,0 +1,64 @@
+.content-home{
+
+    background-image: url('../../../assets/img/bg-hold.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+    .title1{
+        font-size: 10rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 4rem;
+        color: #ffcb05;
+
+        -webkit-text-stroke: .1rem #2a75bb;
+    }
+
+    .contentOptions{
+        width: 50%;
+        margin: 10rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            position: relative;
+            text-decoration: none;
+            color: #ddd;
+            
+            h2{
+                position: absolute;
+                font-size: 4rem;
+                top: 30%;
+                left: 25%;
+            }
+        }
+
+        .pokedex,
+        .pokeball{
+            transform: scale(1.4);
+            transition: all .3s;
+
+            &:hover{
+                transform: scale(1.6);
+            }
+        }
+    }
+
+
+}
+
+// Footer
+
+.footer{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem 2rem;
+    background: #021c1e;
+    color: #fff;
+}
+

@@ -1,0 +1,98 @@
+.sectionBattle{
+    background-image: url('../../../assets/img/bg-battle.png');
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 1rem 4rem;
+    background: #021c1e;
+    z-index: 5;
+
+    a{
+        padding: 1rem;
+        text-decoration: none;
+        background: #66a5ad;
+        border-radius: 1rem;
+        color: #021c1e;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: all .3s;
+
+        &:hover{
+            background: #07575b;
+            color: #66a5ad;
+        }
+    }
+}
+
+.title1{
+    text-align: center;
+    font-size: 4rem;
+    color: #c4dfe6;
+}
+.title2{
+    text-align: center;
+    font-size: 2rem;
+    color: #c4dfe6;
+    padding: 2rem;
+}
+.title3{
+    text-align: center;
+    font-size: 2rem;
+    color: #c4dfe6;
+    padding-top: 2rem;
+}
+
+// Battle
+
+.content-menu{
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #66a5ad;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem #021c1e;
+    
+    .selectPk{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        padding: 2rem;
+        margin-bottom: 10rem;
+
+        .pokemon{
+            list-style: none;
+            border-radius: .5rem;
+            margin: .5rem;
+            text-align: center;
+            background-color: #c4dfe6;
+            transition: all .3s;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #fff;
+                transform: scale(1.2);
+                box-shadow: .5rem .5rem 1rem #021c1e, -.5rem 0 1rem #021c1e;
+            }
+        }
+        
+    }
+}
+
+
+// Footer
+
+.footer{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem 2rem;
+    background: #021c1e;
+    color: #fff;
+}

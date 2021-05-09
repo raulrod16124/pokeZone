@@ -1,0 +1,135 @@
+// .sectionPokedex{
+    
+// }
+
+.content-nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 1rem 4rem;
+    background: #021c1e;
+    z-index: 5;
+
+    a{
+        padding: 1rem;
+        text-decoration: none;
+        background: #66a5ad;
+        border-radius: 1rem;
+        color: #021c1e;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: all .3s;
+
+        &:hover{
+            background: #07575b;
+            color: #66a5ad;
+        }
+    }
+}
+
+.title2{
+    text-align: center;
+    font-size: 4rem;
+    color: #c4dfe6;
+}
+
+.content-pokemons{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    // .stage{
+        
+    // }
+
+    .picture{
+        position: absolute;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 5;
+        left: 0;
+        background: linear-gradient(to top, #66a5ad, #c4dfe6);
+        
+        img{
+            width: 70%;
+            margin: 10vh 20% 5vh 20%;
+            opacity: .9;
+
+            &:hover{
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+
+        .someData{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 1rem;
+            font-size: 3rem;
+            background-color: #c4dfe6;
+        }
+    }
+
+    .list{
+        position: absolute;
+        width: 50%;
+        top: 10rem;  
+        right: 0;
+        padding: 1rem 2rem;
+        background: linear-gradient(to top, #003b46, #07575b);
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        color: #c4dfe6;
+    }
+
+    .pkInlist{
+        display: flex;
+        justify-content: space-between;
+        border: .1rem solid #003b46;
+        border-radius: 2rem;
+        background: rgba(0,0,0, .2);
+        margin: 1rem 0;
+        transition: all .3s;
+
+        .part1{
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        p{
+            padding: 5rem;
+            font-size: 3rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+            background: lighten($color: #003b46, $amount: 20);
+        }
+
+        .pokeball{
+            width: 5%;
+            height: 4rem;
+            margin: 6rem;
+        }
+    }
+
+}
+
+// Footer
+
+.footer{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem 2rem;
+    background: #021c1e;
+    color: #fff;
+}
+
