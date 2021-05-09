@@ -14,21 +14,21 @@ export class BattleComponent implements OnInit {
 
   constructor( private pokedexServices : PokedexService ) {
     
-    this.pokedexServices.getAll().then( e => {
+    this.pokedexServices.getAll().then( pkms => {
 
-      this.pokemons = e;
-      this.pokemonsFilter = e;
+      this.pokemons = pkms;
+      this.pokemonsFilter = pkms;
 
       // Iterando sobre la otra consulta a la api para añadir datos al primera array
       this.pokemons.forEach( ( pokemon : any) => {
 
-        this.pokedexServices.getPokedexDetails( pokemon.name ).then( i => {
+        this.pokedexServices.getPokedexDetails( pokemon.name ).then( pkdata => {
 
-          pokemon.id = i.id;
-          pokemon.imgPk = i.pkimg;
-          pokemon.type = i.type;
-          pokemon.order = i.order;
-          pokemon.xp = i.experience;
+          pokemon.id = pkdata.id;
+          pokemon.imgPk = pkdata.pkimg;
+          pokemon.type = pkdata.type;
+          pokemon.order = pkdata.order;
+          pokemon.xp = pkdata.experience;
 
         } )
         

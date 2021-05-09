@@ -12,7 +12,7 @@ export class PokedexService {
 
     return axios.get('https://pokeapi.co/api/v2/pokemon/?limit=150')
                 .then( rest => rest.data )
-                .then( p => p.results);
+                .then( pokemons => pokemons.results);
 
 
   }
@@ -21,19 +21,19 @@ export class PokedexService {
 
     return axios.get('https://pokeapi.co/api/v2/pokemon/' + id)
                 .then( rest => rest.data )
-                .then( (p : any) => {
+                .then( (pkm : any) => {
 
                   return {
 
-                    id : p.id,
-                    name : p.name,
-                    order : p.order,
-                    experience : p.base_experience,
-                    type : p.types[0].type.name,
-                    height : p.height,
-                    weight : p.weight,
-                    moveOne : p.moves[0].move.name,
-                    pkimg : p.sprites.front_default,
+                    id : pkm.id,
+                    name : pkm.name,
+                    order : pkm.order,
+                    experience : pkm.base_experience,
+                    type : pkm.types[0].type.name,
+                    height : pkm.height,
+                    weight : pkm.weight,
+                    moveOne : pkm.moves[0].move.name,
+                    pkimg : pkm.sprites.front_default,
 
                   }
 

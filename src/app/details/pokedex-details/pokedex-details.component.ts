@@ -15,7 +15,7 @@ export class PokedexDetailsComponent {
 
     let id = this.route.snapshot.paramMap.get( 'id' );
 
-    this.pokemonServices.getPokedexDetails( id ).then( e => this.pokemon = e );
+    this.pokemonServices.getPokedexDetails( id ).then( pkmOpp => this.pokemon = pkmOpp );
 
 
   }
