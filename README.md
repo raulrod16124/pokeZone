@@ -1,4 +1,4 @@
-# Pokeproject
+# Pokeproject ( You can try it on netlify: https://pokezone.netlify.app )
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
